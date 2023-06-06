@@ -1,0 +1,65 @@
+#messages .message {
+    clear: both;
+    overflow: hidden;
+    margin-bottom: 20px;
+    transition: all 0.5s linear;
+    opacity: 0;
+}
+
+#messages .message.left .text_wrapper {
+    background-color: #FFFFFF;
+    margin-left: 20px;
+}
+#messages .message.left .text_wrapper::after, #messages .message.left .text_wrapper::before {
+    right: 100%;
+    border-right-color: #325455;
+}
+#messages .message.left .text {
+    color: #325455;
+}
+
+#messages .message.right .text_wrapper {
+    background-color: #495566;
+    margin-right: 20px;
+    float: right;
+}
+#messages .message.right .text_wrapper::after, #messages .message.right .text_wrapper::before {
+    left: 100%;
+    border-left-color: #ffe600;
+}
+#messages .message.right .text {
+    color: #FFF;
+}
+#messages .message.appeared {
+    opacity: 1;
+}
+
+#messages .message .text_wrapper {
+    display: inline-block;
+    padding: 20px;
+    border-radius: 15px;
+    width: calc(100% - 85px);
+    min-width: 100px;
+    position: relative;
+}
+#messages .message .text_wrapper::after, #messages .message .text_wrapper:before {
+    top: 18px;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+}
+#messages .message .text_wrapper::after {
+    border-width: 13px;
+    margin-top: 0px;
+}
+#messages .message .text_wrapper::before {
+    border-width: 15px;
+    margin-top: -2px;
+}
+#messages .message .text_wrapper .text {
+    font-size: 18px;
+    font-weight: 300;
+}

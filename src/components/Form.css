@@ -1,0 +1,11 @@
+.bottom_wrapper{
+    /* position: relative; */
+    /* width: 100%+20px; */
+    background-color: #fff;
+    padding: 20px 20px;
+    bottom: 0;
+    display: flex;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    
+}

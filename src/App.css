@@ -1,0 +1,17 @@
+.app_window {
+    position: relative;
+    width:  1000px;
+    
+    height: 750px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+    background: rgb(235, 235, 234, 0.8);
+    mix-blend-mode: normal;
+    border: 1px solid #D1D1D1;
+    box-shadow: inset 0px 0px 10px 5px #DFDEDE;
+    border-radius: 25px;
+    overflow-y: auto;
+    
+}
