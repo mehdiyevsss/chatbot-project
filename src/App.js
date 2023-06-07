@@ -35,8 +35,14 @@ function App() {
   return (
     <div className="mainContainer">
       <div className="side-container">
-        <Faq />
-        <History />
+        <div className="faq-container">
+          <h1 className="try-asking">Try Asking</h1>
+          <Faq />
+        </div>
+        <div className="faq-container">
+          <h1 className="chat-history">Chat History</h1>
+          <History />
+        </div>
       </div>
 
       <div className="app_window">

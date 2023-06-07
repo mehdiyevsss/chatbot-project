@@ -29,3 +29,27 @@
   margin-right: 20px;
   
 }
+.faq-container{
+  display: flex;
+  flex-direction: column;
+  
+}
+.faq-container h1{
+  /* position: absolute; */
+    width: 108px;
+    height: 24px;
+    top: -30px;
+
+    font-weight: 550;
+    font-size: 15px;
+    line-height: 23px;
+    text-align: left;
+    color: #567e86;
+
+}
+.history-container{
+  display: flex;
+  flex-direction: column;
+  
+
+}

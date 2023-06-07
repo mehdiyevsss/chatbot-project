@@ -1,7 +1,7 @@
 import "./Faq.css"
 const Faq=()=>{
     return (
-        <div className="Faq"/>
+        <div className="Faq"></div>
 
     )
 }
