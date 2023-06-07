@@ -1,6 +1,6 @@
 .app_window {
     position: relative;
-    width:  1000px;
+    width:  1200px;
     
     height: 750px;
     display: flex;
@@ -14,4 +14,18 @@
     border-radius: 25px;
     overflow-y: auto;
     
+}
+.mainContainer{
+  width: 90%;
+  height: 800px;
+  display: flex;
+  
+  
+}
+.side-container{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-right: 20px;
+  
 }

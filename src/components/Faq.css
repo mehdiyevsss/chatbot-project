@@ -1,0 +1,9 @@
+.Faq{
+   position: relative;
+    width: 300px;
+    height: 270px;
+    border-radius: 15px;
+    background: rgb(24 52 90);
+    mix-blend-mode: normal;
+    border: 1px solid #000000;
+}

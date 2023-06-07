@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import './App.css'
 
-
+import History from "./components/History";
+import Faq from "./components/Faq";
 import Form from "./components/Form";
 import MessageBox from "./components/MessageBox";
 
@@ -32,8 +33,12 @@ function App() {
       Render HTML
     */
   return (
-    <div className='mainContainer'>
-      
+    <div className="mainContainer">
+      <div className="side-container">
+        <Faq />
+        <History />
+      </div>
+
       <div className="app_window">
         <MessageBox messages={messages} />
         <Form onSubmitMessage={onSubmitMessage} />
