@@ -1,9 +1,13 @@
-#messages {
-    position: relative;
+.messages {
+    width: 100%;
+    height: calc(100% - 60px);
     list-style: none;
-    padding: 20px 10px 0 10px;
+    padding: 30px;
     margin: 0;
-    height: 750px;
-    word-wrap: break-word;
     overflow-y: scroll;
+
+    border-radius: 25px 25px 0 0;
+    background: rgb(235, 235, 234, 0.8);
+    mix-blend-mode: normal;
+    box-shadow: inset 0px 0px 10px 5px #DFDEDE;
 }

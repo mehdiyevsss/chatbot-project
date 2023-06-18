@@ -1,37 +1,17 @@
-
-.salam{
+input {
     background: #FFFFFF;
     border-radius: 0px 0px 15px 15px;
     border: none;
-    box-sizing: border-box;
-    flex-basis: 4rem;
-    flex-shrink: 0;
-    display: flex;
-    align-items: center;
     padding: 0 0.5rem 0 1.5rem;
-    
-    
-
-}
-.message_input{
-    border: none;
-    background-image: none;
-    background-color: #ffffff;
-    padding: 0.5rem 1rem;
-    margin-right: 55px;
     border-radius: 1.125rem;
-    flex-grow: 2;
     box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1), 0rem 1rem 1rem -1rem rgba(0, 0, 0, 0.2);
+    
     font-weight: 400;
     letter-spacing: 0.025em;
-    width: 750px;
+    flex: 1;
     height: 40px;
-
-    
-  
-
 }
-.message_input::placeholder{
+
+input::placeholder{
     color: #999;
-    font-size: 20px;
 }

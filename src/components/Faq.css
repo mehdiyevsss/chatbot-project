@@ -1,9 +1,24 @@
-.Faq{
-   position: relative;
-    width: 300px;
-    height: 270px;
+.faq {
+    position: relative;
+    width: 100%;
+    height: 100%;
     border-radius: 15px;
     background: rgb(24 52 90);
     mix-blend-mode: normal;
-    border: 1px solid #000000;
+    padding: 16px;
+    overflow: auto;
+}
+
+.faq__item {
+    list-style: none;
+    color: #beebe3;
+    border-bottom: 1px solid #619ca5;
+    padding-bottom: 16px;
+    margin-bottom: 16px;
+} 
+
+.faq__item:last-child {
+    border-bottom: none;
+    margin: 0;
+    padding: 0;
 }

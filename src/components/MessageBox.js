@@ -1,11 +1,9 @@
 import React, { useEffect, useRef } from "react";
 import './MessageBox.css'
-import { Messages } from "./Messages";
+import { Messages } from "./Message";
 
 function MessageBox(props) {
-  /*
-      Autoscrolling
-     */
+  /* Autoscrolling */
   const messagesEndRef = useRef(null);
 
   useEffect(() => {
@@ -20,8 +18,8 @@ function MessageBox(props) {
   }
 
   return (
-    <ul id="messages">
-      {props.messages.map((item, i) => (
+    <ul className="messages">
+      {props.messages.map((item) => (
         <Messages text={item.text} position={item.position} />
       ))}
       <li ref={messagesEndRef} />
