@@ -1,33 +1,33 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import './App.css'
+
 
 import Faq from "./components/Faq";
 import Form from "./components/Form";
 import MessageBox from "./components/MessageBox";
+
+import {io} from "socket.io-client";
+const socket = io("ws://localhost:4000");
 
 function App() {
   const [messages, setMessages] = useState([
     {
       text: "Hello, Travelist Bot here, how can i help you?",
       position: "left",
-    },
-    {
-      text: "Hello, Travelist Bot here, how can i help you?",
-      position: "right",
-    },
-    {
-      text: "Hello, Travelist Bot here, how can i help you? Hello, Travelist Bot here, how can i help you? Hello, Travelist Bot here, how can i help you?",
-      position: "left",
-    },
-    {
-      text: "Hello, Travelist Bot here, how can i help you?",
-      position: "right",
     }
   ]);
   const [showQuestions, setShowQuestions] = useState(false);
 
+  useEffect(() => {
+    socket.on("answer", (data) => {
+        setMessages([...messages, {text: data, position: "left"}])
+    });
+
+  }, [messages]);
+
   function onSubmitMessage(inputText) {
     setMessages([...messages, { text: inputText, position: "right" }]);
+    socket.emit('question', inputText);
   }
 
   return (

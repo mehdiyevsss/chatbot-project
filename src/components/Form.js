@@ -11,6 +11,10 @@ function Form(props) {
     setInputText(e.target.value);
   }
 
+  function listenEnter(e) {
+    if (e.key === "Enter") handleSubmit();
+  }
+
   function handleSubmit() {
     props.onSubmitMessage(inputText);
     setInputText("");
@@ -18,7 +22,7 @@ function Form(props) {
 
   return (
     <div className="form">   
-       <Input value={inputText} onChange={handleChange}/>
+       <Input value={inputText} onChange={handleChange} onKeyDown={listenEnter} />
        <Button onClick={handleSubmit} />
     </div>
   );
