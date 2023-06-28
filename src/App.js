@@ -1,13 +1,12 @@
 import React, { useEffect, useState } from "react";
 import './App.css'
 
-
 import Faq from "./components/Faq";
 import Form from "./components/Form";
 import MessageBox from "./components/MessageBox";
 
 import {io} from "socket.io-client";
-const socket = io("ws://localhost:4000");
+const socket = io("wss://travelchatbot-backend.azurewebsites.net");
 
 function App() {
   const [messages, setMessages] = useState([
