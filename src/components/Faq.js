@@ -9,7 +9,7 @@ const Faq = () => {
             <li className="faq__item">WHat is the description of Museum Island?</li>
             <li className="faq__item">What is the price of Museum Island?</li>
             <li className="faq__item">What is the rating of Museum Island?</li>
-            <li className="faq__item">What is the working hours of Museum Island?</li>
+            <li className="faq__item">When is the working hours of Museum Island?</li>
             <li className="faq__item">Where is the location of Museum Island?</li>
             
             <li className="faq__item">What to eat in Berlin?</li>
